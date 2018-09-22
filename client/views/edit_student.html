@@ -1,0 +1,57 @@
+<a href="#/student">Go Back</a>
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Edit Student</h3>
+  </div>
+  <div class="panel-body">
+    <div class="row">
+      <div class="col-md-12">
+      <form ng-submit="updateStudent()" ng-init="getStudent()">
+        <div class="form-group">
+          <label>CODE</label>
+          <input type="text" class="form-control" ng-model="student.code" placeholder="CODE">
+        </div>
+        <div class="form-group">
+          <label>ADMN NO</label>
+          <input type="text" class="form-control" ng-model="student.admn_no" placeholder="ADMN NO">
+        </div>
+        <div class="form-group">
+          <label>CLASS</label>
+          <input type="text" class="form-control" ng-model="student.class" placeholder="CLASS">
+        </div>
+        
+        <div class="form-group">
+          <label>Student Name</label>
+          <input type="text" class="form-control" ng-model="student.student_name" placeholder="Name">
+        </div>
+        <div class="form-group">
+          <label>Father Name</label>
+        <input type="text" class="form-control" ng-model="student.father_name" placeholder="Father">
+        </div>
+        <div class="form-group">
+          <label>Door No</label>
+          <input type="text" class="form-control" ng-model="student.door_no" placeholder="Door NO">
+        </div>
+        <div class="form-group">
+          <label>Street</label>
+          <input type="text" class="form-control" ng-model="student.street" placeholder="Street">
+        </div>
+        <div class="form-group">
+          <label>Town</label>
+          <input type="text" class="form-control" ng-model="student.town" placeholder="Town">
+        </div>
+        <div class="form-group">
+          <label>Phone Number 1</label>
+          <input type="tel" class="form-control" ng-model="student.phone_no1" placeholder="Phone NO">
+        </div>
+        <div class="form-group">
+          <label>Phone Number 2</label>
+          <input type="tel" class="form-control" ng-model="student.phone_no2" placeholder="Phone NO">
+        </div>
+       
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+    </div>
+    </div>
+  </div>
+</div>

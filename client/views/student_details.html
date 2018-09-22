@@ -1,0 +1,23 @@
+<a href="#/student">Go Back</a>
+<div class="panel panel-default" ng-init="getStudent()">
+  <div class="panel-heading">
+    <h3 class="panel-title">{{student.student_name}}</h3>
+  </div>
+  <div class="panel-body">
+    <div class="row">
+      <div class="col-md-8">
+        <ul class="list-group">
+          <li class="list-group-item">Father Name: {{student.father_name}}</li>
+          <li class="list-group-item">Code : {{student.code}}</li>
+          <li class="list-group-item">Admn NO: {{student.admn_no}}</li>
+          <li class="list-group-item">Class: {{student.class}}</li>
+        </ul>
+      
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="pull-right">
+  <a href="#/students/edit/{{student._id}}">Edit</a> |  <a href="#" ng-click="removeStudent(student._id)">Delete</a>
+  </div>
